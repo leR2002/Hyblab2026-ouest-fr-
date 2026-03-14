@@ -1,0 +1,202 @@
+{
+  "imagePath": "img/epstein.png",
+  "hotspots": [
+
+    {
+      "id": "ordinateur",
+      "article": {
+        "tag": "Partie 1 · Logistique & Archives",
+        "title": "La Epstein Library",
+        "description": "Le ministère américain de la Justice a publié trois millions de nouveaux documents liés à l’affaire Jeffrey Epstein le 30 janvier, sous la contrainte d’une loi votée par le Congrès. Cette nouvelle salve de publication génère une onde de choc à travers le monde. Voici trois questions pour mieux comprendre ce que sont ces documents et les enjeux autour de leur révélation.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/affaire-epstein-comment-consulter-les-fichiers-trois-questions-pour-mieux-comprendre-les-enjeux-de-leur-publication-49899192-08bd-11f1-8d8f-93b36c1239ba"
+      }
+    },
+
+    {
+      "id": "livre",
+      "article": {
+        "tag": "Partie 3 · Preuves du système",
+        "title": "Close-Up — Thysia Huisman",
+        "description": "Plus de trente ans après les faits, la néerlandaise Thysia Huisman raconte son viol dans la capitale, sa rencontre avec Jeffrey Epstein et dénonce un système organisé. Elle demande aujourd’hui aux enquêteurs français d’identifier tous les complices.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/affaire-epstein-jai-ete-droguee-et-violee-a-paris-le-temoignage-glacant-dune-ancienne-mannequin-ba510ca0-0bd5-11f1-b839-4d59eb76df60"
+      }
+    },
+
+    {
+      "id": "tigre",
+      "article": {
+        "tag": "Épilogue · Mise en scène du pouvoir",
+        "title": "Le tigre grandeur nature",
+        "description": "Prises en 2019, les photos de l’appartement de New York, au 9 East 71 Street, constituent presque un inventaire visuel du personnage Epstein : mélange d’art, de mise en scène du pouvoir et d’objets dérangeants. En regardant attentivement ces images, dont certaines n’ont jamais été publiées, on peut isoler dix détails frappants qui expliquent encore un peu plus la facette trouble du multi-millionnaire pédocriminel.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/en-images-les-10-choses-les-plus-troublantes-que-les-enqueteurs-ont-decouvert-dans-lappartement-depstein-57960758-18a2-11f1-92e2-ea7c021e42bb"
+      }
+    },
+
+    {
+      "id": "globe",
+      "article": {
+        "tag": "Partie 1 · Logistique & Archives",
+        "title": "Un empire sans frontières",
+        "description": "Au fil des années, Jeffrey Epstein a réussi à s’insérer au cœur des cercles de pouvoir les plus fermés, construisant une influence grâce à sa capacité à connecter, faciliter et approcher. Au travers d’infographies, prenez connaissance des protagonistes et de l’architecture internationale de cette affaire.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/infographies-jeffrey-epstein-lhomme-qui-tenait-le-monde-dans-sa-toile-e3a93fe0-13f1-11f1-8725-6cea811c3c37"
+      }
+    },
+
+
+    {
+      "id": "passport",
+      "article": {
+        "tag": "Partie 4 · Secrets financiers",
+        "title": "Le passeport de « Marius Robert Fortelni »",
+        "description": "Jeffrey Epstein était-il au cœur d’une toile d’espionnage internationale tissée pendant la guerre froide ? La découverte fortuite d’un passeport autrichien au nom d’emprunt dans son coffre-fort de Manhattan et sa proximité avec le père de Ghislaine Maxwell alimente aussi bien les fantasmes que les soupçons.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/quels-secrets-cache-le-faux-passeport-autrichien-trouve-dans-lappartement-depstein-cdbe6070-09a1-11f1-8f27-f38523081a88"
+      }
+    },
+
+    {
+      "id": "avion_matricule",
+      "article": {
+        "tag": "Partie 1 · Logistique & Archives",
+        "title": "Le « Lolita Express » — N212JE",
+        "description": "Signature gravée sur la carcasse métallique d'un avion aujourd'hui à l'abandon en Géorgie. Ce Boeing 727, tristement célèbre, fut le véritable pivot logistique du trafic sexuel d'Epstein — reliant les élites de New York aux rivages secrets des Îles Vierges pendant deux décennies.",
+        "link": "https://www.ultimedia.com/deliver/generic/iframe/mdtk/01124706/zone/1/src/3lmlkfz"
+
+      }
+    },
+
+
+
+    {
+      "id": "corde",
+      "article": {
+        "tag": "Partie 5 · Fin de l'empire",
+        "title": "La mort en cellule — pièce à conviction",
+        "description": "Parmi les millions de documents révélés autour de l’affaire Epstein, certains remettent un coup de projecteur sur les circonstances de la mort du prédateur sexuel dans la nuit du 9 au 10 août 2019. Que s’est-il vraiment passé ce soir-là dans la cellule de la prison fédérale de Manhattan ? Les autorités ont toujours affirmé qu’il s’était suicidé par pendaison. Son frère assure qu’il a été assassiné. On fait le point.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/gardiens-endormis-os-du-cou-fractures-cameras-eteintes-que-sait-on-des-circonstances-de-la-mort-de-jeffrey-epstein-23b9f5ae-0b12-11f1-8f27-f38523081a88"
+      }
+    },
+
+    {
+      "id": "Un tableau avec Little St James",
+      "article": {
+        "tag": "Un tableau avec Little St James",
+        "title": "« Little Saint Jeff » : l’île où Jeffrey Epstein régnait sans police ni témoins",
+        "description": "Une situation géographique idéale, une logistique rondement menée et des avantages financiers et politiques en cascade : voici comment Jeffrey Epstein a fait de Little Saint James et de Great Saint James, deux petites îles des Caraïbes, le cœur d’un réseau pédocriminel tentaculaire pendant deux décennies.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/enquete-quest-devenue-limmense-fortune-de-jeffrey-epstein-apres-sa-mort-7a711d5a-123d-11f1-b716-b464f6755d91"
+      }
+    },
+
+
+
+
+    {
+      "id": "lettre",
+      "article": {
+        "tag": "Partie 5 · Fin de l'empire",
+        "title": "La lettre de dérogation du procureur Vincent Frazer (2012)",
+        "description": "La loi des Iles vierges, où vivait Jeffrey Epstein, impose aux délinquants sexuels de déclarer leurs déplacements 21 jours à l’avance. Et pourtant, celui qui a été condamné en 2008 pour ce type de crime a bénéficié d’une dérogation officielle accordée par les autorités de 2012 à 2019, lui permettant de notifier ses départs à la dernière minute et circuler librement à l’international. Un régime exceptionnel, accordé notamment en raison de ses relations confidentielles avec « les puissants ».",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/info-ouest-france-jeffrey-epstein-beneficiait-dun-passe-droit-de-la-justice-pour-ses-voyages-internationaux-8a06dbc2-1172-11f1-ac20-ad3e04eb72b3"
+      }
+    },
+
+
+    {
+      "id": "STATUE RÉELLE",
+      "article": {
+        "tag": "La « Grande figure » d'Alberto Giacometti",
+        "title": "La lettre de dérogation du procureur Vincent Frazer (2012)",
+        "description": "Le parquet financier poursuit ses investigations après les révélations sur Caroline et Jack Lang dans les fichiers Epstein. L’art servait-il seulement à collectionner… ou aussi à faire circuler l’argent loin des regards ? Notre enquête reconstitue pièce par pièce cette architecture où se mêlent les montages offshore, l’énigme de la (double) identité déclarée de Caroline Lang, et la place singulière de Jack Lang dans un dispositif financier semblant dépasser le seul marché de l’art.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/enquete-lart-les-trusts-et-les-millions-les-coulisses-du-montage-financier-qui-lie-les-lang-a-la-galaxie-epstein-5f525dae-1544-11f1-8725-6cea811c3c37"
+      }
+    },
+
+    {
+      "id": " photo chapelle",
+      "article": {
+        "tag": "La photo de la chapelle du château de Villette ",
+        "title": "La photo de la chapelle du château de Villette ",
+        "description": "Des e-mails et photos inédits révèlent que Jeffrey Epstein et Ghislaine Maxwell ont tenté d’acquérir le château de Villette, un domaine historique ayant servi de décor au film Da Vinci Code. Située à une heure de Paris, cette propriété de 77 hectares, isolée et prestigieuse, aurait pu devenir la base arrière européenne de son système.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/info-ouest-france-jeffrey-epstein-voulait-soffrir-le-chateau-de-da-vinci-code-a-une-heure-de-paris-c370d2e2-0e33-11f1-b929-abb85d5fd4cd"
+      }
+    },
+
+    {
+      "id": "chaussures",
+      "article": {
+        "tag": "Une paire de chaussures de ville (pointure 9) ",
+        "title": "Une paire de chaussures de ville (pointure 9) ",
+        "description": " Des invitations diplomatiques aux transferts financiers, des centaines d’e-mails révèlent comment Fabrice Aidan, diplomate français en poste aux Nations unies, a servi d’intermédiaire direct à Jeffrey Epstein entre 2010 et 2017. Sous couvert de ses fonctions officielles, il a facilité ses contacts avec des ministres, des chefs d’État et des figures de la finance mondiale, contribuant à redorer l’influence internationale du financier après sa condamnation.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/a-lonu-fabrice-aidan-ce-protecteur-diplomatique-francais-qui-a-permis-le-retour-de-jeffrey-epstein-3b9a6f84-10b5-11f1-8e97-58d10b9feb4d"
+    }
+    },
+
+    {
+      "id": "valise ",
+      "article": {
+        "tag": "valise ",
+        "title": "La valise rigide de mannequin ",
+        "description": " Des invitations diplomatiques aux transferts financiers, des centaines d’e-mails révèlent comment Fabrice Aidan, diplomate français en poste aux Nations unies, a servi d’intermédiaire direct à Jeffrey Epstein entre 2010 et 2017. Sous couvert de ses fonctions officielles, il a facilité ses contacts avec des ministres, des chefs d’État et des figures de la finance mondiale, contribuant à redorer l’influence internationale du financier après sa condamnation.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/affaire-epstein-un-reportage-de-1988-montre-jean-luc-brunel-au-cur-du-systeme-parisien-cc45adbc-0cb1-11f1-a992-d10c268d755d"
+    }
+    },
+
+    {
+      "id": " photo Brunel",
+      "article": {
+        "tag": "PHOTO DE BRUNEL ",
+        "title": "La photo de Brunel ",
+        "description": "Une ordonnance de 30 pages que Ouest-France a pu lire révèle une réalité accablante : loin d’être un prédateur isolé, le patron d’agence de mannequins proche de Jeffrey Epstein était au cœur d’un système industriel d’exploitation. Châteaux transformés en lieux de viols, mannequins mineures exploitées et « envoyées » aux États-Unis, complicités occultées : pourquoi cette enquête documentée a-t-elle été si vite enterrée ?",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/exclusif-mineures-chateaux-diners-comment-le-reseau-epstein-a-pu-operer-en-france-en-toute-impunite-grace-a-brunel-d7b3de9e-1b11-11f1-9fa1-ca7616976f61"
+      }
+    },
+    {
+      "id": " Tour Eiffel",
+      "article": {
+        "tag": "PHOTO De Tour Eiffel ",
+        "title": "Tour Eiffel ",
+        "description": "Ancienne snowboardeuse olympique, une jeune femme russe apparaît dans les fichiers Epstein comme un relais actif à Paris. Entre 2011 et 2013, les e-mails que Ouest-France a pu consulter révèlent comment cette étudiante en droit à La Sorbonne a identifié, approché et mis en relation des jeunes femmes pour le milliardaire américain.", 
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/info-ouest-france-comment-une-etudiante-russe-a-paris-identifiait-et-recrutait-des-jeunes-femmes-pour-epstein-3531bee0-0a6b-11f1-8d8f-93b36c1239ba"
+    }
+    },
+
+    {
+      "id": "carnet de chèques",
+      "article": {
+        "tag": "carnet de chèques ",
+        "title": "carnet de chèques",
+        "description": "« Ouest-France » a pu consulter la plainte déposée en 2023 par les Îles Vierges américaines contre la banque JPMorgan Chase. Elle permet de reconstituer, pièce par pièce, l’architecture financière qui a soutenu le système Epstein. Comptes multiples, retraits en liquide, sociétés écrans, pots-de-vin versés à des victimes… et même mariages arrangés.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/info-ouest-france-comptes-bancaires-societes-offshore-mariages-arranges-comment-fonctionnait-lentreprise-epstein-64c1b40a-0d8e-11f1-b839-4d59eb76df60"
+      }
+    },
+
+    {
+      "id": ".Un palmier ",
+      "article": {
+        "tag": ".Un palmier  ",
+        "title": "Palm Beach ",
+        "description": "Vingt-trois avant que le milliardaire new-yorkais soit inculpé pour exploitation sexuelle de mineures, en 2019, une jeune femme avait porté plainte contre Jeffrey Epstein pour agression sexuelle et détention d’images pédopornographiques. Les documents récemment publiés par le ministère de la Justice confirment que cette première alerte a totalement été ignorée, comme d’autres qui ont suivi, laissant le pédocriminel continuer à sévir.",
+        "link": "https://www.ouest-france.fr/monde/etats-unis/jeffrey-epstein/la-premiere-plainte-contre-jeffrey-epstein-date-de-1996-pourquoi-le-predateur-sexuel-na-t-il-pas-ete-stoppe-avant-ae380504-0be9-11f1-b839-4d59eb76df60"
+      }
+    },
+    {
+      "id": "Une équerre  ",
+      "article": {
+        "tag": "Une équerre   ",
+        "title": "Prof de maths ",
+        "description": "Jeffrey Epstein, pédocriminel dont la correspondance récemment révélée éclabousse de nombreuses personnalités en Europe et aux États-Unis, disposait d’une fortune estimée à 600 millions d’euros. Une manne globalement issue de Wall Street et de ses relations avec deux grands hommes d’affaires américains. ",
+        "link": "https://www.ouest-france.fr/leditiondusoir/2026-02-20/prof-de-maths-mediocre-issu-de-la-classe-moyenne-comment-le-pedocriminel-jeffrey-epstein-a-t-il-bati-sa-fortune-28e50824-39c4-4a94-b9e3-f63299a29df2"      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+  ]
+}
