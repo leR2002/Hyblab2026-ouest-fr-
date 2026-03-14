@@ -1,0 +1,318 @@
+/* ════════════════════════════════════════════════════════════════
+   BASE
+════════════════════════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background: #0a0a0f;
+  font-family: 'Georgia', serif;
+  color: #f0ece4;
+}
+
+canvas { display: block; cursor: grab; }
+canvas:active { cursor: grabbing; }
+
+/* ════════════════════════════════════════════════════════════════
+   LOADING
+════════════════════════════════════════════════════════════════ */
+#loading {
+  position: fixed; inset: 0; z-index: 9999;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  background: #0a0a0f;
+  transition: opacity 0.6s ease;
+}
+#loading.hidden { opacity: 0; pointer-events: none; }
+
+#loading-text {
+  font-size: 13px; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(240,236,228,.5);
+  margin-bottom: 20px;
+}
+#loading-bar-track {
+  width: 200px; height: 2px;
+  background: rgba(255,255,255,.1); border-radius: 2px; overflow: hidden;
+}
+#loading-bar {
+  height: 100%; width: 0%;
+  background: #e9c46a;
+  transition: width 0.3s ease;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   HUD
+════════════════════════════════════════════════════════════════ */
+#hud {
+  position: fixed; top: 0; left: 0; right: 0;
+  padding: 20px 28px;
+  background: linear-gradient(to bottom, rgba(0,0,0,.55), transparent);
+  pointer-events: none; z-index: 10;
+}
+#hud h1 {
+  font-size: 13px; font-weight: 400;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: rgba(240,236,228,.6);
+}
+
+#hint {
+  position: fixed; bottom: 28px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: rgba(240,236,228,.35);
+  pointer-events: none; z-index: 10;
+  white-space: nowrap;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   HOTSPOT LABELS (point hotspots)
+════════════════════════════════════════════════════════════════ */
+.hotspot-label {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 50;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  transition: opacity 0.2s ease;
+}
+.hotspot-label .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #e9c46a;
+  box-shadow: 0 0 0 3px rgba(233,196,106,.25);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+.hotspot-label .tag {
+  font-size: 10px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: rgba(240,236,228,.8);
+  background: rgba(0,0,0,.5); backdrop-filter: blur(6px);
+  padding: 3px 8px; border-radius: 4px;
+  border: 1px solid rgba(255,255,255,.08);
+  white-space: nowrap;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(233,196,106,.25); }
+  50%       { box-shadow: 0 0 0 7px rgba(233,196,106,.0); }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   CALIBRATION TOGGLE BUTTON
+════════════════════════════════════════════════════════════════ */
+#calib-toggle {
+  position: fixed; bottom: 24px; right: 24px; z-index: 1000;
+  background: rgba(10,10,15,.7); backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.7);
+  padding: 8px 16px; border-radius: 20px;
+  cursor: pointer; font-size: 12px; letter-spacing: 0.05em;
+  transition: all 0.2s;
+}
+#calib-toggle:hover  { background: rgba(30,30,40,.85); color: #fff; }
+#calib-toggle.active { background: rgba(233,196,106,.2); color: #e9c46a; border-color: rgba(233,196,106,.4); }
+
+/* ════════════════════════════════════════════════════════════════
+   CALIBRATION CROSSHAIR
+════════════════════════════════════════════════════════════════ */
+#calib-crosshair {
+  position: fixed; pointer-events: none; z-index: 9000;
+  width: 20px; height: 20px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+#calib-crosshair.on { display: block; }
+#calib-crosshair::before,
+#calib-crosshair::after {
+  content: ''; position: absolute;
+  background: rgba(233,196,106,.9);
+}
+#calib-crosshair::before { width: 1px; height: 100%; left: 50%; top: 0; }
+#calib-crosshair::after  { width: 100%; height: 1px; top: 50%; left: 0; }
+
+/* ════════════════════════════════════════════════════════════════
+   CALIBRATION PANEL
+════════════════════════════════════════════════════════════════ */
+#calib-panel {
+  position: fixed; top: 16px; right: 16px;
+  width: 280px;
+  background: rgba(10,10,15,.55); backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px; padding: 14px 16px;
+  z-index: 999;
+  opacity: 0; pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+#calib-panel.on { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+#calib-panel h3 {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+  margin: 0 0 10px 0;
+  cursor: grab; user-select: none;
+}
+#calib-panel h3:active { cursor: grabbing; }
+
+#calib-coords {
+  font-size: 12px; color: #e9c46a;
+  min-height: 32px; margin-bottom: 8px; line-height: 1.5;
+}
+#calib-list {
+  max-height: 120px; overflow-y: auto; margin-bottom: 10px;
+}
+.calib-entry {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 11px; color: rgba(255,255,255,.6);
+  padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,.05);
+}
+.calib-del {
+  background: none; border: none;
+  color: rgba(255,255,255,.3); cursor: pointer;
+  font-size: 12px; padding: 0 4px; line-height: 1;
+}
+.calib-del:hover { color: #e76f51; }
+#calib-actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.calib-btn {
+  flex: 1; font-size: 11px; padding: 5px 8px;
+  border-radius: 6px; border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06); color: rgba(255,255,255,.7);
+  cursor: pointer; white-space: nowrap; transition: background 0.15s;
+}
+.calib-btn:hover       { background: rgba(255,255,255,.12); }
+.calib-btn.accent      { background: rgba(233,196,106,.15); color: #e9c46a; border-color: rgba(233,196,106,.3); }
+.calib-btn.accent:hover{ background: rgba(233,196,106,.25); }
+
+/* ════════════════════════════════════════════════════════════════
+   POPUP
+════════════════════════════════════════════════════════════════ */
+#popup-overlay {
+  position: fixed; inset: 0; z-index: 500;
+  display: flex; align-items: flex-end; justify-content: flex-start;
+  padding: 0 0 40px 40px;
+  pointer-events: none;
+}
+#popup-overlay.visible { pointer-events: auto; }
+
+#popup {
+  width: 360px;
+  background: rgba(10,8,6,.92); backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 4px;
+  padding: 28px;
+  transform: translateY(24px); opacity: 0;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  position: relative;
+}
+#popup-overlay.visible #popup { transform: translateY(0); opacity: 1; }
+
+#popup-close {
+  position: absolute; top: 14px; right: 18px;
+  font-size: 20px; color: rgba(255,255,255,.3);
+  cursor: pointer; line-height: 1;
+  transition: color 0.15s;
+}
+#popup-close:hover { color: #fff; }
+
+#popup-category {
+  font-size: 10px; letter-spacing: 0.15em;
+  text-transform: uppercase; color: #e9c46a;
+  margin-bottom: 10px;
+}
+#popup-title {
+  font-size: 22px; font-weight: 400; line-height: 1.25;
+  color: #f0ece4; margin-bottom: 14px;
+}
+#popup-description {
+  font-size: 14px; line-height: 1.65;
+  color: rgba(240,236,228,.65); margin-bottom: 20px;
+}
+#popup-cta { display: flex; gap: 10px; }
+
+.btn-primary {
+  padding: 10px 20px; border-radius: 3px;
+  background: #e9c46a; color: #0a0a0f;
+  border: none; font-size: 12px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  cursor: pointer; transition: background 0.2s;
+}
+.btn-primary:hover { background: #f4d58d; }
+
+.btn-secondary {
+  padding: 10px 20px; border-radius: 3px;
+  background: transparent; color: rgba(240,236,228,.5);
+  border: 1px solid rgba(255,255,255,.12);
+  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  cursor: pointer; transition: all 0.2s;
+}
+.btn-secondary:hover { color: #f0ece4; border-color: rgba(255,255,255,.3); }
+
+/* ════════════════════════════════════════════════════════════════
+   ARTICLE PANEL
+════════════════════════════════════════════════════════════════ */
+#article-backdrop {
+  position: fixed; inset: 0; z-index: 600;
+  background: rgba(0,0,0,.6); backdrop-filter: blur(4px);
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+#article-backdrop.visible { opacity: 1; pointer-events: auto; }
+
+#article-panel {
+  position: fixed; top: 0; right: -540px; bottom: 0;
+  width: 520px; z-index: 700;
+  background: #0f0d0b;
+  border-left: 1px solid rgba(255,255,255,.06);
+  overflow-y: auto;
+  transition: right 0.4s cubic-bezier(.4,0,.2,1);
+}
+#article-panel.open { right: 0; }
+
+#article-panel-inner { padding: 48px 40px 60px; }
+
+#article-close {
+  position: absolute; top: 18px; right: 22px;
+  font-size: 22px; background: none; border: none;
+  color: rgba(255,255,255,.3); cursor: pointer;
+  transition: color 0.15s;
+}
+#article-close:hover { color: #fff; }
+
+#article-kicker {
+  font-size: 10px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: #e9c46a;
+  margin-bottom: 14px;
+}
+#article-headline {
+  font-size: 26px; font-weight: 400; line-height: 1.3;
+  color: #f0ece4; margin-bottom: 16px;
+}
+#article-meta {
+  font-size: 11px; color: rgba(240,236,228,.35);
+  letter-spacing: 0.08em; margin-bottom: 28px;
+  display: flex; gap: 8px;
+}
+#article-intro {
+  font-size: 15px; line-height: 1.75;
+  color: rgba(240,236,228,.75);
+  border-left: 2px solid #e9c46a;
+  padding-left: 16px; margin-bottom: 28px;
+}
+.article-block { margin-bottom: 24px; }
+.article-subtitle {
+  font-size: 13px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgba(240,236,228,.5); margin-bottom: 8px;
+}
+.article-text {
+  font-size: 14px; line-height: 1.75;
+  color: rgba(240,236,228,.65);
+}
+#article-footer { margin-top: 40px; }
+.btn-back {
+  background: none; border: none;
+  color: rgba(240,236,228,.4);
+  font-size: 12px; letter-spacing: 0.1em;
+  text-transform: uppercase; cursor: pointer;
+  transition: color 0.2s;
+}
+.btn-back:hover { color: #f0ece4; }

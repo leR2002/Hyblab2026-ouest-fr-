@@ -1,16 +1,14 @@
 # Descriptif du projet
 
-Porteur de projet :
+Porteur de projet : Ouest-France
 
-Sujet :
+Sujet : L'affaire Epstein
 
-Nom d'équipe :
+Nom d'équipe : Epsteam
 
 Participants : 
-
-- EDNA :
-- Polytech :  
-
+- EDNA :Louis SAUVE, GERMAIN Mateo, Poudat edouard
+- Polytech :   RMEILLI Hamza, YAHYA Mouhamed Mahmoud, RIDAOUI Moncef, Créptus Jacob GONDJE-DACKA, REBAI Mehdi
 
 
 ## A supprimer
